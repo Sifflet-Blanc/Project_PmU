@@ -8,4 +8,7 @@ Si tu sais pas comment faire demande.
 
 Mettez un commit compréhensible, qu'on puisse très facilement repérer ce qu'on devra merge ensuite.
 
+Site utile pour map et personnages en pixel art : 
+https://opengameart.org/content/a-platformer-in-the-forest
+
 DES  BISOUUUUUUUUUUS
