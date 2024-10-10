@@ -1,33 +1,11 @@
 using UnityEngine;
 using System.Collections;
 
-public class PlayerHealth : MonoBehaviour
-{
-    public static int MAXHEALTH = 100;
-    
-    public int maxHealth = MAXHEALTH;
-    public int currentHealth;
-
+public class PlayerHealth : CharacterHealth
+{   
     public float invincibilityTimeAfterHit = 3f;
     public float invicibilityFlashDelay = 0.15f;
     public bool isInvicible = false;
-
-    public SpriteRenderer graphics;
-    public HealthBar healthBar;
-
-    void Start()
-    {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            TakeDamage(20);
-        }
-    }
 
     public void TakeDamage(int damage)
     {
