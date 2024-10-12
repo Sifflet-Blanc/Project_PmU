@@ -2,26 +2,50 @@ using UnityEngine;
 
 public class PlayerMovementTopDownView : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Vitesse de déplacement
+    public float moveSpeed = 5f; // Vitesse de dÃ©placement
     public Rigidbody2D rb; // Le Rigidbody2D du joueur
-    private Vector2 movement; // Le vecteur de déplacement
+    public Animator animator; // RÃ©fÃ©rence Ã  l'Animator
+    private Vector2 movement; // Le vecteur de dÃ©placement
+    private bool isFacingRight = true; // VÃ©rifie si le personnage regarde Ã  droite
 
     void Update()
     {
-        // Récupération des inputs de déplacement
+        // RÃ©cupÃ©ration des inputs de dÃ©placement
         movement.x = Input.GetAxisRaw("Horizontal"); // Input pour gauche/droite
         movement.y = Input.GetAxisRaw("Vertical");   // Input pour haut/bas
+
+        // Envoie la vitesse au paramÃ¨tre "Speed" de l'Animator
+        animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        // Gestion de la rotation du personnage
+        if (movement.x > 0 && !isFacingRight)
+        {
+            Flip(); // Tourne vers la droite
+        }
+        else if (movement.x < 0 && isFacingRight)
+        {
+            Flip(); // Tourne vers la gauche
+        }
     }
 
     void FixedUpdate()
     {
-        // Appliquer le déplacement
+        // Appliquer le dÃ©placement
         MovePlayer();
     }
 
     void MovePlayer()
     {
-        // Applique le mouvement à la vitesse spécifiée
+        // Applique le mouvement Ã  la vitesse spÃ©cifiÃ©e
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    void Flip()
+    {
+        // Inverse l'Ã©chelle sur l'axe X
+        isFacingRight = !isFacingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1; // Inverse l'axe X
+        transform.localScale = theScale;
     }
 }

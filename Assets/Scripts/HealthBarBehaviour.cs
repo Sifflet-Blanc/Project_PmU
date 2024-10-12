@@ -30,8 +30,10 @@ public class HealthBarBehaviour : MonoBehaviour
 
     void Update()
     {
-        // R�cup�re la position du serpent (SpriteRenderer)
-        Vector3 screenPosition = Camera.main.WorldToScreenPoint(enemy.transform.position + offset);
-        slider.transform.position = screenPosition; // Positionne la barre de vie
+         if (enemy != null)
+         {
+            Vector3 screenPosition = Camera.main.WorldToScreenPoint(enemy.transform.position + offset);
+            slider.transform.position = screenPosition; // Positionne la barre de vie
+         }
     }
 }

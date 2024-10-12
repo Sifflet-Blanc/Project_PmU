@@ -7,7 +7,7 @@ public class PlayerHealth : CharacterHealth
     public float invicibilityFlashDelay = 0.15f;
     public bool isInvicible = false;
 
-    public void TakeDamage(int damage)
+    public override void TakeDamage(int damage)
     {
         if (!isInvicible)
         {

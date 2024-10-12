@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class EnnemyPatrol : MonoBehaviour
 {
-    public float speed;
+    public float speed = 2;
     public Transform[] waypoints;
 
     public int damageOnCollision = 20;
+
+    public Animator animator;
 
     public SpriteRenderer graphics;
     private Transform target;
@@ -20,10 +22,11 @@ public class EnnemyPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetFloat("Speed", speed);
         Vector3 direction = target.position - transform.position;
         transform.Translate(direction.normalized * speed * Time.deltaTime, Space.World);
 
-        //Si l'ennemi est quasiment arrivé à sa destination
+        //Si l'ennemi est quasiment arrivï¿½ ï¿½ sa destination
         if (Vector3.Distance(transform.position, target.position) < 0.3f)
         {
             destPoint = (destPoint + 1) % waypoints.Length;
