@@ -6,6 +6,8 @@ public class EnemyBehaviour : MonoBehaviour
     public float maxHealth;
     public HealthBarBehaviour healthBar;
 
+    public LevelManager levelManager;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -18,8 +20,7 @@ public class EnemyBehaviour : MonoBehaviour
         healthBar.SetHealth(currentHealth);
         if (currentHealth < 0)
         {
-            Destroy(gameObject);
-            healthBar.slider.gameObject.SetActive(false);
+            Die();
         }
 
     }
@@ -31,6 +32,13 @@ public class EnemyBehaviour : MonoBehaviour
         {
             TakeDamage(10); // Le serpent prend 10 points de d�g�ts
         }
+    }
+
+    private void Die()
+    {
+        levelManager.OnEnemyDeath();
+        healthBar.slider.gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
 }

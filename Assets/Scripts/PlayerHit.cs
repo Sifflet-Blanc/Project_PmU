@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHit : MonoBehaviour
 {
-    private float damage = 10;
+    public float damage = 10f;
     public CircleCollider2D attackRange; // Référence au Circle Collider 2D
     private List<EnemyBehaviour> enemiesInRange = new List<EnemyBehaviour>();
     public Animator animator;
@@ -29,19 +29,23 @@ public class PlayerHit : MonoBehaviour
         isAttacking = true;
         animator.SetBool("isAttacking", true); // Démarrer l'animation
 
+        // Attendre la fin de l'animation avant de désactiver l'attaque
+        yield return new WaitForSeconds(0.7f); // Ajuste ce délai selon la durée de l'animation
+        
         // Appliquer des dégâts à tous les ennemis dans la zone
-        foreach (EnemyBehaviour enemy in enemiesInRange)
+        // Créer une copie pour éviter des modifications concurrentes
+        List<EnemyBehaviour> enemiesToDamage = new List<EnemyBehaviour>(enemiesInRange); 
+        foreach (EnemyBehaviour enemy in enemiesToDamage)
         {
-            if (enemy != null) // S'assurer que l'ennemi existe toujours
+            if (enemy != null) // Vérifier si l'ennemi existe encore
             {
                 enemy.TakeDamage(damage);
             }
         }
-
-        // Attendre la fin de l'animation avant de désactiver l'attaque
-        yield return new WaitForSeconds(0.5f); // Ajuste ce délai selon la durée de l'animation
+         // Attendre un court moment avant de réinitialiser l'état d'attaque
         animator.SetBool("isAttacking", false); // Fin de l'animation
         isAttacking = false;
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -70,3 +74,5 @@ public class PlayerHit : MonoBehaviour
         }
     }
 }
+
+

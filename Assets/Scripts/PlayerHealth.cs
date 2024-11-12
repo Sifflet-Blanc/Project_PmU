@@ -7,6 +7,20 @@ public class PlayerHealth : CharacterHealth
     public float invicibilityFlashDelay = 0.15f;
     public bool isInvicible = false;
 
+    public static PlayerHealth instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("There is no more instance of GameOverManager in this scene");
+            return;
+        }
+
+        instance = this;
+    }
+
+
     public override void TakeDamage(int damage)
     {
         if (!isInvicible)
@@ -16,7 +30,18 @@ public class PlayerHealth : CharacterHealth
             isInvicible = true;
             StartCoroutine(InvicibilityFlash());
             StartCoroutine(HandleInvicibilityDelay());
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
         }
+    }
+
+    public void Die()
+    {
+        Debug.Log("Player is dead");
+        GameOverManager.instance.OnPlayerDeath();
+        gameObject.SetActive(false);
     }
 
     public IEnumerator InvicibilityFlash()
@@ -35,4 +60,6 @@ public class PlayerHealth : CharacterHealth
         yield return new WaitForSeconds(invincibilityTimeAfterHit);
         isInvicible = false;
     }
+
+
 }

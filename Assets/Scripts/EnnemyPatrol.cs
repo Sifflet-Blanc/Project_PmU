@@ -6,9 +6,6 @@ public class EnnemyPatrol : MonoBehaviour
     public Transform[] waypoints;
 
     public int damageOnCollision = 20;
-
-    public Animator animator;
-
     public SpriteRenderer graphics;
     private Transform target;
     private int destPoint;
@@ -22,7 +19,6 @@ public class EnnemyPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.SetFloat("Speed", speed);
         Vector3 direction = target.position - transform.position;
         transform.Translate(direction.normalized * speed * Time.deltaTime, Space.World);
 

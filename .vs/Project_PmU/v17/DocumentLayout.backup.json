@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|c:\\users\\chevi\\onedrive\\documents\\pick me up\\workspace\\project_pmu\\assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|c:\\users\\chevi\\onedrive\\documents\\pick me up\\workspace\\project_pmu\\assets\\scripts\\characterhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characterhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HealthBar.cs",
+              "DocumentMoniker": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\Scripts\\HealthBar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthBar.cs",
+              "ToolTip": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\Scripts\\HealthBar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HealthBar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T18:48:50.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CharacterHealth.cs",
+              "DocumentMoniker": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\Scripts\\CharacterHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterHealth.cs",
+              "ToolTip": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\Scripts\\CharacterHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CharacterHealth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T18:46:34.663Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
