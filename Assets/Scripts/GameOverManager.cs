@@ -23,8 +23,8 @@ public class GameOverManager : MonoBehaviour
     {
         gameOverUI.SetActive(true);
     }
-    /*
-    public void RetryButton()
+
+    /*public void RetryButton()
     {
         //Recommencer le niveau
         //Recharge la scène
@@ -36,7 +36,7 @@ public class GameOverManager : MonoBehaviour
 
     public void MainMenuButton()
     {
-
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitButton()

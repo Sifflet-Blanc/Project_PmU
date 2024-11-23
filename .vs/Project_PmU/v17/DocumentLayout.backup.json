@@ -3,11 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|c:\\users\\chevi\\onedrive\\documents\\pick me up\\workspace\\project_pmu\\assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|c:\\users\\chevi\\onedrive\\documents\\pick me up\\workspace\\project_pmu\\assets\\settingsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|solutionrelative:assets\\settingsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|c:\\users\\chevi\\onedrive\\documents\\pick me up\\workspace\\project_pmu\\assets\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|solutionrelative:assets\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\assets\\scripts\\popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|c:\\users\\chevi\\onedrive\\documents\\pick me up\\workspace\\project_pmu\\assets\\scripts\\characterhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\assets\\scripts\\characterhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characterhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,28 +30,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HealthBar.cs",
-              "DocumentMoniker": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\Scripts\\HealthBar.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthBar.cs",
-              "ToolTip": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\Scripts\\HealthBar.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HealthBar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Title": "SettingsMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\SettingsMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\SettingsMenu.cs",
+              "ToolTip": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\SettingsMenu.cs",
+              "RelativeToolTip": "Assets\\SettingsMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T18:48:50.445Z",
+              "WhenOpened": "2024-11-22T18:30:54.49Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\MainMenu.cs",
+              "RelativeToolTip": "Assets\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:13:22.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PopUp.cs",
+              "DocumentMoniker": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\Scripts\\PopUp.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PopUp.cs",
+              "ToolTip": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\Scripts\\PopUp.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PopUp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T18:31:14.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HealthBar.cs",
+              "DocumentMoniker": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\Scripts\\HealthBar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthBar.cs",
+              "ToolTip": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\Scripts\\HealthBar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HealthBar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T18:48:50.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CharacterHealth.cs",
               "DocumentMoniker": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\Scripts\\CharacterHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterHealth.cs",
@@ -47,8 +92,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CharacterHealth.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T18:46:34.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T18:46:34.663Z"
             }
           ]
         }
