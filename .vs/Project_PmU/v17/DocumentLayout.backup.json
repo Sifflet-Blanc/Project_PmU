@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|c:\\users\\chevi\\onedrive\\documents\\pick me up\\workspace\\project_pmu\\assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\chevi\\onedrive\\documents\\pick me up\\workspace\\project_pmu\\assets\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|c:\\users\\chevi\\onedrive\\documents\\pick me up\\workspace\\project_pmu\\assets\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|solutionrelative:assets\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|c:\\users\\chevi\\onedrive\\documents\\pick me up\\workspace\\project_pmu\\assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89D84E14-40DE-8509-1348-9582D795AB04}|Assembly-CSharp.csproj|C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\assets\\scripts\\popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +42,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GameOverManager.cs",
               "DocumentMoniker": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\Scripts\\GameOverManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameOverManager.cs",
@@ -121,7 +121,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UIController.cs",
               "DocumentMoniker": "C:\\Users\\Chevi\\OneDrive\\Documents\\Pick me Up\\workspace\\Project_PmU\\Assets\\UIController.cs",
               "RelativeDocumentMoniker": "Assets\\UIController.cs",
