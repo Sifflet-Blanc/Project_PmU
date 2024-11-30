@@ -24,6 +24,8 @@ public class EndGameController : MonoBehaviour
 
     public void QuitGame()
     {
-        QuitGame();
+        Application.Quit();
+        Debug.Log("Game is exiting..."); // Ajoute un log pour vérifier que la fonction est bien appelée
     }
+
 }

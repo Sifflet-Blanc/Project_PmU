@@ -40,7 +40,7 @@ public class PlayerHealth : CharacterHealth
     public void Die()
     {
         Debug.Log("Player is dead");
-        GameOverManager.instance.OnPlayerDeath();
+        LevelManager.instance.OnPlayerDeath();
         gameObject.SetActive(false);
     }
 

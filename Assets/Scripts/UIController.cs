@@ -10,11 +10,11 @@ public class UIController : MonoBehaviour
     public class Map
     {
         public string mapName; // Nom de la map
-        public string sceneName; // Nom de la sc�ne correspondante
+        public string sceneName; // Nom de la sc�ne correspondante
     }
 
     public List<Map> maps = new List<Map>(); // Liste des maps
-    public GameObject mapButtonTemplate; // Bouton mod�le (template)
+    public GameObject mapButtonTemplate; // Bouton mod�le (template)
     public Transform content; // Conteneur du Scroll View (Content)
     public GameObject levelListPanel;
 
@@ -25,34 +25,42 @@ public class UIController : MonoBehaviour
     }
 
     void PopulateMapList()
+{
+    int unlockedLevel = ProgressionManager.GetProgress(); // Obtenir la progression actuelle
+    unlockedLevel = Mathf.Min(unlockedLevel, maps.Count); // Empêche unlockedLevel d'excéder maps.Count
+
+    Debug.Log($"Unlocked levels: {unlockedLevel}, Total maps: {maps.Count}");
+
+    for (int i = 0; i < maps.Count; i++) // Boucle sur tous les éléments
     {
-        float spacing = 50f; // Espacement vertical entre les boutons
-        float currentY = 0f; // Position initiale
+        Debug.Log($"Processing map index {i}: {maps[i].mapName}");
 
-        foreach (Map map in maps)
+        GameObject newButton = Instantiate(mapButtonTemplate, content);
+        newButton.SetActive(true);
+
+        // Configurer le texte du bouton avec le nom de la map
+        newButton.GetComponentInChildren<Text>().text = maps[i].mapName;
+
+        // Vérifier si le niveau est débloqué
+        Button button = newButton.GetComponent<Button>();
+        if (i + 1 > unlockedLevel)
         {
-            GameObject newButton = Instantiate(mapButtonTemplate, content);
-            newButton.SetActive(true);
-
-            // Configurer le texte
-            newButton.GetComponentInChildren<Text>().text = map.mapName;
-
-            // D�finir la position
-            RectTransform rectTransform = newButton.GetComponent<RectTransform>();
-            rectTransform.anchoredPosition = new Vector2(0, currentY);
-
-            // Ajouter un listener
-            newButton.GetComponent<Button>().onClick.AddListener(() => LoadMap(map.sceneName));
-
-            // Ajuster pour le prochain bouton
-            currentY -= spacing; // Descendre pour le prochain bouton
+            button.interactable = false; // Désactiver le bouton si le niveau est verrouillé
+            Debug.Log($"Level {i + 1} ({maps[i].mapName}) is locked.");
+        }
+        else
+        {
+            int levelIndex = i; // Stocker une copie locale pour éviter les problèmes de portée
+            button.onClick.AddListener(() => LoadMap(maps[levelIndex].sceneName));
+            Debug.Log($"Level {i + 1} ({maps[i].mapName}) is unlocked.");
         }
     }
+}
 
 
     public void LoadMap(string sceneName)
     {
-        // Charger la sc�ne de la map
+        // Charger la sc�ne de la map
         SceneManager.LoadScene(sceneName);
     }
 

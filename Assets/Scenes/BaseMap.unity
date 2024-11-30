@@ -6906,6 +6906,7 @@ GameObject:
   - component: {fileID: 1239200706}
   - component: {fileID: 1239200707}
   - component: {fileID: 1239200708}
+  - component: {fileID: 1239200709}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -6963,6 +6964,18 @@ MonoBehaviour:
   mapButtonTemplate: {fileID: 214225012}
   content: {fileID: 2021140203}
   levelListPanel: {fileID: 479814503}
+--- !u!114 &1239200709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239200705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65f53924ca67ba4fab9203a9761a4a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1252566943 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5281063671732302502, guid: c5c395a83c3338d46bd52e936cf46245, type: 3}
